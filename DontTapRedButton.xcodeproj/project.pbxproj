@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EBD0A131C9C5C04008EEDC6 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EBD0A121C9C5C04008EEDC6 /* GameKit.framework */; };
 		B46025E81C99D185004FB771 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46025E71C99D185004FB771 /* AppDelegate.swift */; };
-		B46025EA1C99D185004FB771 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46025E91C99D185004FB771 /* ViewController.swift */; };
 		B46025ED1C99D185004FB771 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B46025EB1C99D185004FB771 /* Main.storyboard */; };
 		B46025EF1C99D185004FB771 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B46025EE1C99D185004FB771 /* Assets.xcassets */; };
 		B46025F21C99D185004FB771 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B46025F01C99D185004FB771 /* LaunchScreen.storyboard */; };
+		B46025FE1C99D3A3004FB771 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46025FD1C99D3A3004FB771 /* BaseViewController.swift */; };
+		B46026001C99E2F6004FB771 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46025FF1C99E2F6004FB771 /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B46025E41C99D185004FB771 /* TaptheButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaptheButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EBD0A121C9C5C04008EEDC6 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		B46025E41C99D185004FB771 /* DontTapRedButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DontTapRedButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B46025E71C99D185004FB771 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B46025E91C99D185004FB771 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B46025EC1C99D185004FB771 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B46025EE1C99D185004FB771 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B46025F11C99D185004FB771 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B46025F31C99D185004FB771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B46025FD1C99D3A3004FB771 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B46025FF1C99E2F6004FB771 /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EBD0A131C9C5C04008EEDC6 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,13 +45,14 @@
 			children = (
 				B46025E61C99D185004FB771 /* TaptheButton */,
 				B46025E51C99D185004FB771 /* Products */,
+				3EBD0A121C9C5C04008EEDC6 /* GameKit.framework */,
 			);
 			sourceTree = "<group>";
 		};
 		B46025E51C99D185004FB771 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B46025E41C99D185004FB771 /* TaptheButton.app */,
+				B46025E41C99D185004FB771 /* DontTapRedButton.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,7 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				B46025E71C99D185004FB771 /* AppDelegate.swift */,
-				B46025E91C99D185004FB771 /* ViewController.swift */,
+				B46025FF1C99E2F6004FB771 /* StartViewController.swift */,
+				B46025FD1C99D3A3004FB771 /* BaseViewController.swift */,
 				B46025EB1C99D185004FB771 /* Main.storyboard */,
 				B46025EE1C99D185004FB771 /* Assets.xcassets */,
 				B46025F01C99D185004FB771 /* LaunchScreen.storyboard */,
@@ -67,9 +74,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B46025E31C99D185004FB771 /* TaptheButton */ = {
+		B46025E31C99D185004FB771 /* DontTapRedButton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B46025F61C99D185004FB771 /* Build configuration list for PBXNativeTarget "TaptheButton" */;
+			buildConfigurationList = B46025F61C99D185004FB771 /* Build configuration list for PBXNativeTarget "DontTapRedButton" */;
 			buildPhases = (
 				B46025E01C99D185004FB771 /* Sources */,
 				B46025E11C99D185004FB771 /* Frameworks */,
@@ -79,9 +86,9 @@
 			);
 			dependencies = (
 			);
-			name = TaptheButton;
+			name = DontTapRedButton;
 			productName = TaptheButton;
-			productReference = B46025E41C99D185004FB771 /* TaptheButton.app */;
+			productReference = B46025E41C99D185004FB771 /* DontTapRedButton.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -96,10 +103,20 @@
 				TargetAttributes = {
 					B46025E31C99D185004FB771 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = CYNFYQQLZ9;
+						LastSwiftMigration = 0830;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
-			buildConfigurationList = B46025DF1C99D185004FB771 /* Build configuration list for PBXProject "TaptheButton" */;
+			buildConfigurationList = B46025DF1C99D185004FB771 /* Build configuration list for PBXProject "DontTapRedButton" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -112,7 +129,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B46025E31C99D185004FB771 /* TaptheButton */,
+				B46025E31C99D185004FB771 /* DontTapRedButton */,
 			);
 		};
 /* End PBXProject section */
@@ -135,8 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B46025EA1C99D185004FB771 /* ViewController.swift in Sources */,
 				B46025E81C99D185004FB771 /* AppDelegate.swift in Sources */,
+				B46025FE1C99D3A3004FB771 /* BaseViewController.swift in Sources */,
+				B46026001C99E2F6004FB771 /* StartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,7 +216,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -236,7 +254,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -247,10 +265,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TaptheButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = " -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chenglin.TaptheButton;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DontTapRedButton;
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -258,17 +282,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TaptheButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chenglin.TaptheButton;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DontTapRedButton;
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B46025DF1C99D185004FB771 /* Build configuration list for PBXProject "TaptheButton" */ = {
+		B46025DF1C99D185004FB771 /* Build configuration list for PBXProject "DontTapRedButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B46025F41C99D185004FB771 /* Debug */,
@@ -277,13 +307,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B46025F61C99D185004FB771 /* Build configuration list for PBXNativeTarget "TaptheButton" */ = {
+		B46025F61C99D185004FB771 /* Build configuration list for PBXNativeTarget "DontTapRedButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B46025F71C99D185004FB771 /* Debug */,
 				B46025F81C99D185004FB771 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

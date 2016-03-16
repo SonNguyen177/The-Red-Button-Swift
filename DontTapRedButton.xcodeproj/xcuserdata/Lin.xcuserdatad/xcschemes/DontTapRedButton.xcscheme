@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0720"
+   LastUpgradeVersion = "0830"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B46025E31C99D185004FB771"
-               BuildableName = "TaptheButton.app"
-               BlueprintName = "TaptheButton"
-               ReferencedContainer = "container:TaptheButton.xcodeproj">
+               BuildableName = "DontTapRedButton.app"
+               BlueprintName = "DontTapRedButton"
+               ReferencedContainer = "container:DontTapRedButton.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B46025E31C99D185004FB771"
-            BuildableName = "TaptheButton.app"
-            BlueprintName = "TaptheButton"
-            ReferencedContainer = "container:TaptheButton.xcodeproj">
+            BuildableName = "DontTapRedButton.app"
+            BlueprintName = "DontTapRedButton"
+            ReferencedContainer = "container:DontTapRedButton.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B46025E31C99D185004FB771"
-            BuildableName = "TaptheButton.app"
-            BlueprintName = "TaptheButton"
-            ReferencedContainer = "container:TaptheButton.xcodeproj">
+            BuildableName = "DontTapRedButton.app"
+            BlueprintName = "DontTapRedButton"
+            ReferencedContainer = "container:DontTapRedButton.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B46025E31C99D185004FB771"
-            BuildableName = "TaptheButton.app"
-            BlueprintName = "TaptheButton"
-            ReferencedContainer = "container:TaptheButton.xcodeproj">
+            BuildableName = "DontTapRedButton.app"
+            BlueprintName = "DontTapRedButton"
+            ReferencedContainer = "container:DontTapRedButton.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

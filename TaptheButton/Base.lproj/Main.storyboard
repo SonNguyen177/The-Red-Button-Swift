@@ -1,13 +1,107 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="312-Vq-pbk">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Start View Controller-->
+        <scene sceneID="8YE-jA-dFN">
+            <objects>
+                <viewController id="CvO-f5-oX1" customClass="StartViewController" customModule="DontTapRedButton" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A3B-P9-2yW"/>
+                        <viewControllerLayoutGuide type="bottom" id="g7R-sZ-e8e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pQX-2k-qmL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="nnl-uc-asJ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8it-ny-cZU">
+                                <rect key="frame" x="210" y="210" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="bIJ-pB-1N3"/>
+                                    <constraint firstAttribute="height" constant="180" id="cDP-pM-lId"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
+                                <state key="normal" image="redbutton">
+                                    <color key="titleColor" red="0.9440147082" green="1" blue="0.9778210638" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" animates="NO" id="pRP-D7-4af"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Okay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdU-b0-Hr4">
+                                <rect key="frame" x="270" y="283" width="60.5" height="33"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="25"/>
+                                <color key="textColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't tap the red button" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ysu-kQ-Y1E">
+                                <rect key="frame" x="150" y="430" width="299" height="31"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="0QH-PG-a9y">
+                                <rect key="frame" x="187" y="501" width="226" height="37"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qzD-At-Iyc">
+                                        <rect key="frame" x="0.0" y="0.0" width="129" height="37"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.17429956896551724" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <state key="normal" title="Leaderboard">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showLeaderboard:" destination="CvO-f5-oX1" eventType="touchUpInside" id="vlS-NU-THT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxW-n4-r4p">
+                                        <rect key="frame" x="141" y="0.0" width="85" height="37"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.22939116379310345" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="20"/>
+                                        <state key="normal" title="Rate Me">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="rateApp:" destination="CvO-f5-oX1" eventType="touchUpInside" id="BNA-Q2-a1Q"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nnl-uc-asJ" firstAttribute="top" secondItem="pQX-2k-qmL" secondAttribute="top" id="1d8-C4-N6m"/>
+                            <constraint firstAttribute="trailing" secondItem="nnl-uc-asJ" secondAttribute="trailing" id="FfY-Ka-BI8"/>
+                            <constraint firstItem="FdU-b0-Hr4" firstAttribute="centerY" secondItem="pQX-2k-qmL" secondAttribute="centerY" id="HZi-i1-rvA"/>
+                            <constraint firstItem="Ysu-kQ-Y1E" firstAttribute="top" secondItem="8it-ny-cZU" secondAttribute="bottom" constant="40" id="KYE-LC-2pW"/>
+                            <constraint firstItem="8it-ny-cZU" firstAttribute="centerX" secondItem="pQX-2k-qmL" secondAttribute="centerX" id="MeJ-qv-hnc"/>
+                            <constraint firstItem="nnl-uc-asJ" firstAttribute="leading" secondItem="pQX-2k-qmL" secondAttribute="leading" id="ZHk-BN-6Ol"/>
+                            <constraint firstItem="g7R-sZ-e8e" firstAttribute="top" secondItem="nnl-uc-asJ" secondAttribute="bottom" id="a8t-Ud-Bh2"/>
+                            <constraint firstItem="0QH-PG-a9y" firstAttribute="top" secondItem="Ysu-kQ-Y1E" secondAttribute="bottom" constant="40" id="cuT-L9-c5T"/>
+                            <constraint firstItem="8it-ny-cZU" firstAttribute="centerY" secondItem="pQX-2k-qmL" secondAttribute="centerY" id="fsY-cu-WUg"/>
+                            <constraint firstItem="FdU-b0-Hr4" firstAttribute="centerX" secondItem="pQX-2k-qmL" secondAttribute="centerX" id="hzK-Dp-6kM"/>
+                            <constraint firstItem="Ysu-kQ-Y1E" firstAttribute="centerX" secondItem="pQX-2k-qmL" secondAttribute="centerX" id="qR8-nh-97B"/>
+                            <constraint firstItem="0QH-PG-a9y" firstAttribute="centerX" secondItem="pQX-2k-qmL" secondAttribute="centerX" id="tg5-6N-ieS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Yu-IR-5ha"/>
+                    <connections>
+                        <outlet property="startButton" destination="8it-ny-cZU" id="WsW-13-tcV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eeq-f8-Rxr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="290" y="308"/>
+        </scene>
+        <!--Base View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BaseViewController" customModule="DontTapRedButton" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +109,117 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="1Xh-bT-wIh">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3KW-tw-ZOx">
+                                <rect key="frame" x="265" y="154" width="69.5" height="31"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6E-TY-3aD">
+                                <rect key="frame" x="210" y="210" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="T0z-Si-fCQ"/>
+                                    <constraint firstAttribute="height" constant="180" id="o61-ty-Cjf"/>
+                                </constraints>
+                                <state key="normal" image="redbutton">
+                                    <color key="titleColor" red="0.9440147082" green="1" blue="0.9778210638" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BOOM!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ek-OX-ObU">
+                                <rect key="frame" x="260" y="283" width="78.5" height="34.5"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="26"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="Fwk-YI-e9X">
+                                <rect key="frame" x="153.5" y="440" width="293" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UMJ-TU-ZmN">
+                                        <rect key="frame" x="0.0" y="0.0" width="95" height="45"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.19585129310344829" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="28"/>
+                                        <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" title="Again">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="restartTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BFl-n4-PFM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eqj-6h-ShL">
+                                        <rect key="frame" x="175" y="0.0" width="118" height="45"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="28"/>
+                                        <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                                        <state key="normal" title="Enough">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="exitTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Ej-eQ-KgJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaA-3P-G7b">
+                                <rect key="frame" x="272" y="103" width="56" height="31"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="25"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="L6E-TY-3aD" firstAttribute="top" secondItem="3KW-tw-ZOx" secondAttribute="bottom" constant="25" id="35f-0Z-I0G"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1Xh-bT-wIh" secondAttribute="trailing" constant="-20" id="3Ev-CY-bEe"/>
+                            <constraint firstItem="1Ek-OX-ObU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3W5-2O-RjJ"/>
+                            <constraint firstItem="1Xh-bT-wIh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="4qk-vi-uaT"/>
+                            <constraint firstItem="3KW-tw-ZOx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5zw-2L-hG5"/>
+                            <constraint firstItem="Fwk-YI-e9X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EiK-UB-qbf"/>
+                            <constraint firstItem="L6E-TY-3aD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OwS-0w-vJp"/>
+                            <constraint firstItem="1Xh-bT-wIh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="RT3-Rl-4b2"/>
+                            <constraint firstItem="SaA-3P-G7b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WgS-c4-iew"/>
+                            <constraint firstItem="3KW-tw-ZOx" firstAttribute="top" secondItem="SaA-3P-G7b" secondAttribute="bottom" constant="20" id="XVf-mn-st8"/>
+                            <constraint firstItem="L6E-TY-3aD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dbF-2p-PnA"/>
+                            <constraint firstItem="1Ek-OX-ObU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ggg-Mh-5Co"/>
+                            <constraint firstItem="Fwk-YI-e9X" firstAttribute="top" secondItem="L6E-TY-3aD" secondAttribute="bottom" constant="50" id="n2V-sp-5lN"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1Xh-bT-wIh" secondAttribute="bottom" id="wdH-If-0Z4"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="gameOverLabel" destination="1Ek-OX-ObU" id="GBP-8P-GXT"/>
+                        <outlet property="highScoreLabel" destination="SaA-3P-G7b" id="fjW-Ae-6x9"/>
+                        <outlet property="restartStackView" destination="Fwk-YI-e9X" id="EWw-Ic-lOm"/>
+                        <outlet property="scoreLabel" destination="3KW-tw-ZOx" id="Oxn-Am-0Rc"/>
+                        <outlet property="tapButton" destination="L6E-TY-3aD" id="mhA-w8-Flo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="990" y="308"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="auB-gn-t1c">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="312-Vq-pbk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PDO-da-t3i">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CvO-f5-oX1" kind="relationship" relationship="rootViewController" id="oXb-c9-pSR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zjm-OF-Xo6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-522" y="308"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="384" height="683"/>
+        <image name="redbutton" width="207" height="207"/>
+    </resources>
 </document>
